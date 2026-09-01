@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu | BABU — your quality street café</title>
+<meta name="description" content="Browse the BABU menu in Naga City — hot & iced coffee, matcha, mango tapioca, silog breakfasts, sandwiches and fries. Prices from ₱115. Order via Foodpanda.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BABU — your quality street café">
+<meta property="og:title" content="Menu | BABU — your quality street café">
+<meta property="og:description" content="Coffee, matcha, mango tapioca, silog & sandwiches in Naga City. Browse the full menu and order on Foodpanda.">
+<meta property="og:image" content="assets/og-image.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='13' fill='%2321140C'/%3E%3Cpath transform='translate(10 8)' fill='%23E25A1C' d='M12 21s-7-4.5-9.5-9C.8 8.2 2.6 4.6 6 4.4c2-.1 3.6.9 4.3 2.6h1.4C12.4 5.3 14 4.3 16 4.4c3.4.2 5.2 3.8 3.5 7.6C19 16.5 12 21 12 21Z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Outfit:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-head">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="BABU — home">
+      <svg class="brand__mark" viewBox="0 0 44 44" role="img" aria-hidden="true">
+        <rect width="44" height="44" rx="13" fill="#21140C"/>
+        <path transform="translate(10 9)" fill="#E25A1C" d="M12 21s-7-4.5-9.5-9C.8 8.2 2.6 4.6 6 4.4c2-.1 3.6.9 4.3 2.6h1.4C12.4 5.3 14 4.3 16 4.4c3.4.2 5.2 3.8 3.5 7.6C19 16.5 12 21 12 21Z"/>
+        <path d="M27 14c0 2-.6 3.4 0 5.4" stroke="#F6EBD8" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      </svg>
+      <span class="brand__word">
+        <span class="brand__name">babu</span>
+        <span class="brand__sub">quality street café</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html" data-nav="index.html">Home</a>
+      <a href="menu.html" data-nav="menu.html" class="active">Menu</a>
+      <a href="about.html" data-nav="about.html">About</a>
+      <a href="gallery.html" data-nav="gallery.html">Gallery</a>
+      <a href="order.html" data-nav="order.html">Order</a>
+      <a href="visit.html" data-nav="visit.html">Visit</a>
+    </nav>
+    <div class="nav-ct">
+      <a class="btn btn--heart btn--sm" href="https://www.foodpanda.ph/restaurant/smmc/babu-coffee-and-more-naga-city-subdivision" target="_blank" rel="noopener">
+        <svg class="heart-dot" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7-4.5-9.5-9C.8 8.2 2.6 4.6 6 4.4c2-.1 3.6.9 4.3 2.6h1.4C12.4 5.3 14 4.3 16 4.4c3.4.2 5.2 3.8 3.5 7.6C19 16.5 12 21 12 21Z"/></svg>
+        Order Foodpanda
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-scrim"></div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><b>Menu</b></nav>
+      <h1>The menu — from <span class="em">first shot</span> to late-night silog.</h1>
+      <p class="lead">Hot and iced coffee, matcha and mango tapioca, all-day silog, sandwiches and fries. Prices below match our Foodpanda menu at Naga City Subdivision — oat milk is a small +₱15.</p>
+      <div class="mt-2">
+        <a class="btn btn--heart" href="https://www.foodpanda.ph/restaurant/smmc/babu-coffee-and-more-naga-city-subdivision" target="_blank" rel="noopener">Order on Foodpanda</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="search-wrap">
+        <div class="pills" role="tablist" aria-label="Filter menu by category" id="catPills"></div>
+        <label class="visually-hidden" for="menuSearch">Search the menu</label>
+        <div class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg>
+          <input type="search" id="menuSearch" placeholder="Search e.g. ‘spanish’, ‘silog’">
+        </div>
+      </div>
+      <div id="menuGrid" style="margin-top:2rem;"></div>
+      <p class="order-flow-note" style="margin-top:2rem;font-size:.82rem;color:var(--muted);">Prices in Philippine pesos (₱) as listed on Foodpanda and may change — the live menu always wins. Order instantly on Foodpanda.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="BABU — home">
+          <svg class="brand__mark" viewBox="0 0 44 44" role="img" aria-hidden="true">
+            <rect width="44" height="44" rx="13" fill="#C04D1D"/>
+            <path transform="translate(10 9)" fill="#FFF6E8" d="M12 21s-7-4.5-9.5-9C.8 8.2 2.6 4.6 6 4.4c2-.1 3.6.9 4.3 2.6h1.4C12.4 5.3 14 4.3 16 4.4c3.4.2 5.2 3.8 3.5 7.6C19 16.5 12 21 12 21Z"/>
+          </svg>
+          <span class="brand__word"><span class="brand__name">babu</span><span class="brand__sub">quality street café</span></span>
+        </a>
+        <p class="footer__about">Your neighborhood cup of quality on Ilang-Ilang Street — espresso classics, silog breakfasts and cold favorites, served sharp all day.</p>
+        <div class="footer__social">
+          <a class="icon-btn" href="https://www.facebook.com/babudrinks/" target="_blank" rel="noopener" aria-label="BABU on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1Z"/></svg></a>
+          <a class="icon-btn" href="https://www.instagram.com/babucoffeeeee/" target="_blank" rel="noopener" aria-label="BABU on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17" cy="7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+          <a class="icon-btn" href="https://www.foodpanda.ph/restaurant/smmc/babu-coffee-and-more-naga-city-subdivision" target="_blank" rel="noopener" aria-label="Order BABU on Foodpanda"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="10" r=".4" fill="currentColor"/><circle cx="15" cy="8" r=".4" fill="currentColor"/><circle cx="15" cy="15" r=".4" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Footer">
+        <h4>Explore</h4>
+        <ul><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="visit.html">Visit</a></li></ul>
+      </nav>
+      <div class="footer__col">
+        <h4>Order &amp; stay</h4>
+        <ul>
+          <li><a href="https://www.foodpanda.ph/restaurant/smmc/babu-coffee-and-more-naga-city-subdivision" target="_blank" rel="noopener">Order Foodpanda</a></li>
+          <li><a href="https://www.facebook.com/babudrinks/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/babucoffeeeee/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <ul>
+          <li><a href="https://www.google.com/maps/search/?api=1&query=Ilang-Ilang%20Street%20Naga%20City%20Subdivision%20Camarines%20Sur" target="_blank" rel="noopener">25 Ilang-Ilang St., Naga City Subdivision</a></li>
+          <li><a href="visit.html">Mon–Sat · 8:00 AM – 10:00 PM</a></li>
+          <li><a href="visit.html">Sunday · 1:00 PM – 10:00 PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> BABU · your quality street café. All rights reserved.</span>
+      <span>Naga City, Camarines Sur, Philippines</span>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="data.js"></script>
+<script>
+/* menu render */
+(function () {
+  const grid = document.getElementById("menuGrid");
+  const pillsWrap = document.getElementById("catPills");
+  const search = document.getElementById("menuSearch");
+  const state = { cat: "all", q: "" };
+
+  const catLabel = { coffee: "Coffee", drinks: "Non-Coffee", eats: "Eats" };
+
+  function itemCard(it) {
+    const art = ART[it.art] || "";
+    const best = it.best ? '<span class="badge" style="position:static;">Best seller</span>' : "";
+    const note = it.note ? `<span class="menu-card__note">${it.note}</span>` : "";
+    return `<div class="menu-card reveal in">
+      <div class="menu-card__thumb" style="background:${ART_BG[it.art] || "#EFE0C8"}">${art}</div>
+      <div class="menu-card__body">
+        <div class="menu-card__top">
+          <h3>${it.name}</h3>
+          <span class="price">${Babu.formatPrice(it.price)}</span>
+        </div>
+        <p class="menu-card__desc">${it.desc}</p>
+        <p class="menu-card__tag">${catLabel[it.cat]}${best ? " · Best seller" : ""}</p>
+        ${note}
+      </div>
+    </div>`;
+  }
+
+  function renderPills() {
+    pillsWrap.innerHTML = CATEGORIES.map(c => `<button class="pill${c.id===state.cat?" active":""}" role="tab" aria-selected="${c.id===state.cat}" data-cat="${c.id}">${c.label}</button>`).join("");
+    pillsWrap.querySelectorAll(".pill").forEach(b => b.addEventListener("click", () => {
+      state.cat = b.dataset.cat;
+      renderPills();
+      render();
+      const label = CATEGORIES.find(c => c.id === state.cat).label;
+      try { history.replaceState(null, "", "#" + (state.cat === "all" ? "" : state.cat)); } catch(e) {}
+    }));
+  }
+
+  function render() {
+    const q = state.q.trim().toLowerCase();
+    const items = MENU.filter(it => {
+      if (state.cat !== "all" && it.cat !== state.cat) return false;
+      if (q && !(it.name.toLowerCase().includes(q) || (it.desc||"").toLowerCase().includes(q) || it.grp.toLowerCase().includes(q))) return false;
+      return true;
+    });
+    if (!items.length) {
+      grid.innerHTML = `<div class="empty-state"><p>Nothing matches “${state.q}” — try another word or pick a category.</p></div>`;
+      return;
+    }
+    // group by grp, preserving MENU_GROUP_ORDER
+    const grouped = [];
+    MENU_GROUP_ORDER.forEach(g => {
+      const gItems = items.filter(i => i.grp === g);
+      if (gItems.length) grouped.push({ g, gItems });
+    });
+    grid.innerHTML = grouped.map(gr => `
+      <div class="menu-group">
+        <h4 class="menu-group__title">${gr.g}</h4>
+        <div style="display:grid;gap:.9rem;">${gr.gItems.map(itemCard).join("")}</div>
+      </div>`).join("");
+  }
+
+  search.addEventListener("input", e => { state.q = e.target.value; render(); });
+
+  // deep-link from home (#coffee etc)
+  const hash = location.hash.replace("#", "");
+  if (hash && CATEGORIES.some(c => c.id === hash)) state.cat = hash;
+
+  renderPills();
+  render();
+})();
+</script>
+</body>
+</html>
